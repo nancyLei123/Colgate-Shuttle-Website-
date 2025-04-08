@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Shuttle Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header, .footer {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .nav a {
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            margin: 0 5px;
+        }
+        .content {
+            margin: 15px;
+        }
+        .reservations {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f2f2f2;
+        }
+        .reservation-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Your Shuttle Service Name</h1>
+        <p>Reliable and comfortable transportation</p>
+    </div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Booking</a>
+    </div>
+    <div class="content">
+        <h2>Welcome to Our Shuttle Service</h2>
+        <p>This is the main page of our shuttle service website.</p>
+
+        <!-- Current Reservations Section -->
+        <div class="reservations">
+            <h3>Current Reservations</h3>
+            <!-- Dummy data for display -->
+            <div class="reservation-item">
+                <strong>Name</strong> - number of passengers - Origin to Destination - Time, Date
+            </div>
+            <div class="reservation-item">
+                <strong>[e.g.] Jane Smith</strong> - 3 passenger - Boston to New York - 10:00 pm, April 6, 2024 
+            </div>
+            <!-- More reservations can be added here -->
+        </div>
+    </div>
+    <div class="footer">
+        <p>Contact Us: [Our Phone Number] | [Our Email]</p>
+        <p>&copy; 2024 Your Shuttle Service. All rights reserved.</p>
+    </div>
+</body>
+</html>
+
+///
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Shuttle Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header, .footer {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .nav a {
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            margin: 0 5px;
+        }
+        .content {
+            margin: 15px;
+        }
+        .reservations, .actions {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f2f2f2;
+        }
+        .reservation-item, .action-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-around;
+        }
+        .action-item button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .action-item button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Your Shuttle Service Name</h1>
+        <p>Reliable and comfortable transportation</p>
+    </div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Booking</a>
+    </div>
+    <div class="content">
+        <h2>Welcome to Our Shuttle Service</h2>
+        <p>This is the main page of our shuttle service website.</p>
+
+        <!-- Current Reservations Section -->
+        <div class="reservations">
+            <h3>Current Reservations</h3>
+            <div class="reservation-item">
+                <strong>John Doe</strong> - 3 passengers - New York to Washington - April 5, 2024
+            </div>
+            <div class="reservation-item">
+                <strong>Jane Smith</strong> - 1 passenger - Boston to New York - April 6, 2024
+            </div>
+        </div>
+
+        <!-- Actions Section -->
+        <div class="actions">
+            <div class="action-item">
+                <h4>Make a New Reservation</h4>
+                <button onclick="location.href='booking.html'">Book Now</button>
+            </div>
+            <div class="action-item">
+                <h4>Cancel a Reservation</h4>
+                <button onclick="alert('Cancel functionality to be implemented')">Cancel</button>
+            </div>
+            <div class="action-item">
+                <h4>Join a Current Trip</h4>
+                <button onclick="alert('Join functionality to be implemented')">Join</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Contact Us: [Your Phone Number] | [Your Email]</p>
+        <p>&copy; 2024 Your Shuttle Service. All rights reserved.</p>
+    </div>
+</body>
+</html>
+
+
+
+/////
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join a Trip - Colgate On-Demand</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #800000;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: right;
+        }
+        .nav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #800000;
+        }
+        .nav a:not(:last-child) {
+            margin-right: 10px;
+        }
+        .nav a:hover {
+            background-color: #a52a2a;
+        }
+        .content {
+            margin: 15px;
+            padding: 15px;
+            background-color: #f2f2f2;
+        }
+        .trip-list {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .trip-item {
+            display: flex;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            align-items: center;
+        }
+        .trip-index {
+            margin-right: 15px;
+            font-size: 1.5em;
+            color: #800000;
+        }
+        .trip-info {
+            flex-grow: 1;
+            margin-bottom: 10px;
+        }
+        .join-button {
+            background-color: #800000;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .join-button:hover {
+            opacity: 0.8;
+        }
+        .footer {
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .status {
+            font-weight: bold;
+            color: #800000;
+        }
+        .full {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Join a Trip</h1>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="schedule.html">Shuttle Schedule</a>
+            <a href="account.html">Account</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="trip-list">
+            <h3>Available Trips</h3>
+            <div class="trip-item">
+                <div class="trip-index">1.</div>
+                <div class="trip-info">
+                    <strong>Trip:</strong> From Boston to New York <br>
+                    <strong>Departure:</strong> 10:00 AM, April 8th<br>
+                    <strong>Remaining Seats:</strong> 3<br>
+                    <strong>Expected Price:</strong> $25 per person<br>
+                    <span class="status">Status: Open</span>
+                </div>
+                <button class="join-button">Join</button>
+            </div>
+            <div class="trip-item">
+                <div class="trip-index">2.</div>
+                <div class="trip-info">
+                    <strong>Trip:</strong> From Frank Dining Hall to Syracuse Transportation Center <br>
+                    <strong>Departure:</strong> 2:00 PM, May 3rd<br>
+                    <strong>Remaining Seats:</strong> 0<br>
+                    <strong>Expected Price:</strong> $30 per person<br>
+                    <span class="status full">Status: Full</span>
+                </div>
+                <button class="join-button" disabled>Join</button>
+            </div>
+            <div class="trip-item">
+                <div class="trip-index">3.</div>
+                <div class="trip-info">
+                    <strong>Trip:</strong> From Donovan's Pub to Syracuse Airport<br>
+                    <strong>Departure:</strong> 6:00 AM, May 7th<br>
+                    <strong>Remaining Seats:</strong> 5<br>
+                    <strong>Expected Price:</strong> $40 per person<br>
+                    <span class="status">Status: Open</span>
+                </div>
+                <button class="join-button">Join</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Contact
+

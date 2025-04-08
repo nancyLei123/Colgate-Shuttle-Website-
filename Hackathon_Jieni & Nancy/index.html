@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colgate On-Demand</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #800000;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav {
+            display: flex;
+        }
+        .nav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #800000;
+        }
+        .nav a:not(:last-child) {
+            margin-right: 10px;
+        }
+        .nav a:hover {
+            background-color: #a52a2a;
+        }
+        .content {
+            margin: 15px;
+        }
+        .reservations, .actions {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f2f2f2;
+        }
+        .reservation-item, .action-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-around;
+        }
+        .action-item button {
+            padding: 10px;
+            background-color: #800000;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .action-item button:hover {
+            opacity: 0.8;
+        }
+        .footer {
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Colgate On-Demand</h1>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="join.html">Shuttle Schedule</a>
+            <a href="account.html">Account</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Welcome to Our Shuttle Service</h2>
+        <p>This is the main page of our shuttle service website.</p>
+
+        <!-- Current Reservations Section -->
+        <div class="reservations">
+            <h3>Current Reservations</h3>
+            <div class="reservation-item">
+                <strong>Name</strong> - Number of Passengers - Origin to Destination - Time, Date
+            </div>
+            <div class="reservation-item">
+                <strong>Williams Smith</strong> - 3 passengers - Boston to New York - 10:00 pm, April 6, 2024 
+            </div>
+        </div>
+
+        <!-- Actions Section -->
+        <div class="actions">
+            <div class="action-item">
+                <h4>Make a New Reservation</h4>
+                <button onclick="location.href='booking.html'">Book Now</button>
+            </div>
+            <div class="action-item">
+                <h4>Cancel a Reservation</h4>
+                <button onclick="location.href='cancel.html'">Cancel</button>
+            </div>
+            <div class="action-item">
+                <h4>Join a Current Trip</h4>
+                <button onclick="location.href='join.html'">Join</button>
+              </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Contact Us: [Our Phone Number] | [Our Email]</p>
+        <p>&copy; 2024 Colgate On-Demand. All rights reserved.</p>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Your Ride - Colgate On-Demand</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header, .footer {
+            background-color: #800000; /* Maroon color */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 5px 10px;
+            background-color: #800000; /* Maroon color */
+            color: white;
+            border: none;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .content {
+            margin: 15px;
+            padding: 15px;
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+        }
+        button {
+            background-color: #800000; /* Maroon color */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">Back</a>
+    <div class="header">
+        <h1>Book Your Ride</h1>
+    </div>
+    <div class="content">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Date of Journey:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time of Journey:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="passengers">Number of Passengers:</label>
+            <select id="passengers" name="passengers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="pickup">Pickup Location:</label>
+            <input type="text" id="pickup" name="pickup" required>
+
+            <label for="dropoff">Drop-off Location:</label>
+            <input type="text" id="dropoff" name="dropoff" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Contact Us: [Our Phone Number] | [Our Email]</p>
+        <p>&copy; 2024 Colgate On-Demand. All rights reserved.</p>
+    </div>
+</body>
+</html>

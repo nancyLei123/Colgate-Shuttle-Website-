@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account - Colgate On-Demand</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #800000; /* Maroon color */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: right;
+        }
+        .nav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #800000;
+        }
+        .nav a:hover {
+            background-color: #a52a2a;
+        }
+        .content {
+            margin: 15px;
+            padding: 15px;
+            background-color: #f2f2f2;
+        }
+        .account-details, .past-trips {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .past-trips {
+            display: none;
+        }
+        .footer {
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .toggle-button {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function togglePastTrips() {
+            var x = document.getElementById("pastTripsSection");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Account Details</h1>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="join.html">Shuttle Schedule</a>
+            <a href="account.html">Account</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="account-details">
+            <h3>Your Profile</h3>
+            <p><strong>Name:</strong> [User Name]</p>
+            <p><strong>Email:</strong> [User Email]</p>
+            <p><strong>Phone:</strong> [User Phone]</p>
+            <p><strong>Student ID:</strong> [User ID]</p>
+            <p class="toggle-button" onclick="togglePastTrips()">Past Trips</p>
+        </div>
+        <div class="past-trips" id="pastTripsSection">
+            <h4>Past Trip Details</h4>
+            <!-- Past trip details here -->
+            <p>Trip 1: Boston to New York - 2:00 PM, January 3rd (Completed) </p>
+            <p>Trip 2: Frank Dining Hall to Syracuse Transportation Center - 2:00 PM, Febuary 4th (Canceled) </p>
+            <!-- Add more past trip details as needed -->
+        </div>
+    </div>
+    <div class="footer">
+        <p>Contact Us: [Your Phone Number] | [Your Email]</p>
+        <p>&copy; 2024 Colgate On-Demand. All rights reserved.</p>
+    </div>
+</body>
+</html>

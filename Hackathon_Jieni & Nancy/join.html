@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join a Trip - Colgate On-Demand</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #800000;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: right;
+        }
+        .nav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #800000;
+        }
+        .nav a:not(:last-child) {
+            margin-right: 10px;
+        }
+        .nav a:hover {
+            background-color: #a52a2a;
+        }
+        .content {
+            margin: 15px;
+            padding: 15px;
+            background-color: #f2f2f2;
+        }
+        .trip-list {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .trip-item {
+            display: flex;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            align-items: center;
+        }
+        .trip-index {
+            margin-right: 15px;
+            font-size: 1.5em;
+            color: #800000;
+        }
+        .trip-info {
+            flex-grow: 1;
+            margin-bottom: 10px;
+        }
+        .join-button {
+            background-color: #800000;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .join-button:hover {
+            opacity: 0.8;
+        }
+        .footer {
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .status {
+            font-weight: bold;
+            color: #800000;
+        }
+        .full {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Join a Trip</h1>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="join.html">Shuttle Schedule</a>
+            <a href="account.html">Account</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="trip-list">
+            <h3>Available Trips</h3>
+            <div class="trip-item">
+                <div class="trip-index">1.</div>
+                <div class="trip-info">
+                    <strong>Trip:</strong> From Boston to New York <br>
+                    <strong>Departure:</strong> 10:00 AM, April 8th<br>
+                    <strong>Remaining Seats:</strong> 3<br>
+                    <strong>Expected Price:</strong> $25 per person<br>
+                    <span class="status">Status: Open</span>
+                </div>
+                <button class="join-button">Join</button>
+            </div>
+            <div class="trip-item">
+                <div class="trip-index">2.</div>
+                <div class="trip-info">
+                    <strong>Trip:</strong> From Frank Dining Hall to Syracuse Transportation Center <br>
+                    <strong>Departure:</strong> 2:00 PM, May 3rd<br>
+                    <strong>Remaining Seats:</strong> 0<br>
+                    <strong>Expected Price:</strong> $30 per person<br>
+                    <span class="status full">Status: Full</span>
+                </div>
+                <button class="join-button" disabled>Join</button>
+            </div>
+            <div class="trip-item">
+                <div class="trip-index">3.</div>
+                <div class="trip-info">
+                    <strong>Trip:</strong> From Donovan's Pub to Syracuse Airport<br>
+                    <strong>Departure:</strong> 6:00 AM, May 7th<br>
+                    <strong>Remaining Seats:</strong> 5<br>
+                    <strong>Expected Price:</strong> $40 per person<br>
+                    <span class="status">Status: Open</span>
+                </div>
+                <button class="join-button">Join</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Contact Us: [Your Phone Number] | [Your Email]</p>
+        <p>&copy; 2024 Colgate On-Demand. All rights reserved.</p>
+    </div>
+</body>
+</html>
+
